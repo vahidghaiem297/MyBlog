@@ -1,0 +1,60 @@
+/* Utilities */
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+}
+body,html{
+    font-family: 'PT Sans', sans-serif;
+    overflow-x: hidden;
+    background-color: #f1f1f1;
+}
+img{
+    width: 100%;
+}
+a{
+    text-decoration: none !important;
+}
+/* Utilities End*/
+/* Header */
+.logo a{
+    font-size: 2rem;
+    color: #FFF;
+}
+/* Header End*/
+/* Slider */
+.carousel-item{
+    position: relative;
+}
+.carousel-item::after{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+    background: linear-gradient(rgba(20,20,20,0.3),rgba(20,20,20,0.3));
+}
+.carousel-btn{
+    background-color: dodgerblue;
+    color: #FFF;
+    text-align: center;
+    padding: .7rem;
+    border-radius: 5px;
+    margin-bottom: 2rem;
+    display: inline-block;
+    text-decoration: none;
+    
+}
+.carousel-btn:hover{
+    background-color: rgba(30, 143, 255, 0.699);
+    text-decoration: none;
+    color: #FFF;
+}
+.post .card{
+    margin: 1rem 0;
+}
+/* Slider End*/

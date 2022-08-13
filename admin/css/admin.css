@@ -1,0 +1,73 @@
+/* Utilities */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    overflow-x: hidden;
+    background-color: #FFFFFF;
+}
+a{
+    text-decoration: none !important;
+}
+header{
+    background-color: rgba(20,20,20,0.8);
+}
+
+main{
+    padding: 1rem;
+}
+/* Utilities End*/
+/* Sidebar */
+.sidebar{
+    position: fixed;
+    width:250px;
+    transition: all 0.3s ease-in-out;
+    height: 100%;
+    top: 0;
+    z-index: 1;
+    right:0;
+    background-color: #f2f2f2;
+}
+.sidebar .nav-item .nav-link{
+    margin-top: .5rem;
+    display: block;
+    text-align: left;
+    padding: 1rem;
+    color: #333;
+}
+.sidebar .nav{
+    margin-top: 3rem;
+    transition: all .2s ease;
+}
+.sidebar .nav-item .nav-link:hover,.sidebar .nav-item .nav-link.active{
+    color: dodgerblue;
+}
+.close-btn{
+    font-size: 40px;
+    position: absolute;
+    right: 15px;
+    top: 0px;
+    text-decoration: none !important;
+    color: #333;
+}
+.fa-bars{
+    color: #fff;
+    font-size: 2rem;
+    display: none;
+}
+@media(max-width:768px){
+    .sidebar{
+        width: 0;
+        right: -8rem;
+    }
+    #logout{
+        display: none !important;
+    }
+    .fa-bars{
+        display: block;
+    }
+    
+}
+/* Sidebar End*/

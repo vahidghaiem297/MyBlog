@@ -1,0 +1,41 @@
+/* Utilities */
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+body,html{
+    overflow-x: hidden;
+    background-color: #f1f1f1;
+    position: relative;
+}
+.container{
+    max-width: 500px;
+    margin:5rem auto;
+    padding: 0 2rem;
+}
+/* Utilities End*/
+/* Form */
+#form{
+    display: flex;
+    flex-direction: column;
+    background-color: #333;
+    padding:2rem;
+    border-radius: 5px;
+    margin:0;  
+}
+@media(max-width:500px){
+    .container{
+        margin: 50% auto;
+        padding: 0;
+        max-width: 100% !important;
+    }
+    #form{
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        
+    }
+}
+/* Form End*/
